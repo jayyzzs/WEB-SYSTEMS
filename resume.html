@@ -4,101 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
+            background-color: #1a1a2e;
+            color: #f4f4f4;
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            color: #333;
+            padding: 20px; /* Added padding for overall spacing */
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        #experiences, #qualities, #skills, #leadership, #training, #seminars {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        #experiences { color: #000; }
-        #qualities { color: #964B00; }
-        #skills { color: #013220; }
-        #leadership { color: #00008B; }
-        #training { color: #8B0000; }
-        #seminars { color: #2E8B57; }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .contact-info {
-            text-align: center;
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
             margin-bottom: 20px;
         }
         .section-title {
             font-weight: bold;
-            margin-bottom: 5px;
+            color: #ffffff;
         }
-        #profile-picture {
-            float: right;
-            width: 150px;
-            height: 150px;
-            margin: 0 0 20px 20px;
-            border: 1px solid #ddd;
-            object-fit: cover;
+        .resume-section {
+            background-color: #343a40;
+            padding: 20px; /* Increased padding for more space inside sections */
+            border-radius: 10px;
+            margin-bottom: 30px; /* Increased bottom margin for spacing between sections */
+        }
+        h1, h4 {
+            color: #f4f4f4;
+        }
+        .contact-info p {
+            margin: 0;
+        }
+        .button-container {
+            margin-top: 30px; /* Increased margin for button spacing */
         }
     </style>
 </head>
 <body>
-    <h1>Resume</h1>
 
-    <div class="contact-info">
-        <p><strong>Name:</strong> EJ Carl C. Balaguer</p>
-        <p><strong>Contact:</strong> 09501449860</p>
+<div class="container mt-4">
+    <!-- Profile and Contact Info -->
+    <div class="row align-items-center mb-4"> <!-- Added bottom margin for spacing -->
+        <div class="col-md-3 text-center">
+            <img src="https://github.com/jayyzzs/RESUME/blob/main/Balaguer,%20Ej%20Carl%20Claveron%20(1)%20(1).jpg?raw=true" alt="Profile Picture" class="profile-picture img-fluid">
+        </div>
+        <div class="col-md-9 text-center text-md-start">
+            <h1>EJ Carl C. Balaguer</h1>
+            <p><strong>Contact:</strong> 639684177753</p>
+            <p><strong>Email:</strong> balaguer.ejcarl.claveron@gmail.com</p>
+        </div>
     </div>
 
-    <!-- Profile Picture -->
-    <img id="profile-picture" src="https://github.com/jayyzzs/RESUME/blob/main/Balaguer,%20Ej%20Carl%20Claveron%20(1)%20(1).jpg?raw=true" alt="Profile Picture">
+    <!-- Profile/Summary -->
+    <div class="resume-section">
+        <h4 class="section-title">Profile</h4>
+        <p>Dynamic and self-motivated college student with experience in C++ game development, problem-solving, and leadership roles. Passionate about technology and continuously improving skills through hands-on projects and training.</p>
+    </div>
 
-    <table>
-        <tr>
-            <td id="experiences">
-                <div class="section-title">Experience:</div>
-                C++ Code, Mini game developing using C++ and beginner HTML skills
-            </td>
-            <td id="qualities">
-                <div class="section-title">Qualities:</div>
-                Fast Learner, Adaptive, and Critical thinker
-            </td>
-        </tr>
-        <tr>
-            <td id="skills">
-                <div class="section-title">Skills:</div>
-                Problem solving, Team management, Negotiator
-            </td>
-            <td id="leadership">
-                <div class="section-title">Leadership:</div>
-                Led a team of 5 developers, Organized team meetings
-            </td>
-        </tr>
-        <tr>
-            <td id="training">
-                <div class="section-title">Training:</div>
-                Completed training in C++, Participated in a web development bootcamp
-            </td>
-            <td id="seminars">
-                <div class="section-title">Seminars:</div>
-                Attended seminars on Agile development, Continuous learning
-            </td>
-        </tr>
-    </table>
+    <!-- Education -->
+    <div class="row">
+        <div class="col-md-6 resume-section">
+            <h4 class="section-title">Education</h4>
+            <p><strong>BS in Computer Science</strong>, ABC University (Expected Graduation: 2025)</p>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="row">
+        <div class="col-md-6 resume-section">
+            <h4 class="section-title">Experience</h4>
+            <p>C++ Code, Mini game developing using C++ and beginner HTML skills</p>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="row">
+        <div class="col-md-6 resume-section">
+            <h4 class="section-title">Projects</h4>
+            <p><strong>Mini C++ Game:</strong> Developed a 2D game using C++ with basic AI and scoring system.</p>
+            <p><strong>HTML Portfolio Website:</strong> Designed and implemented a personal portfolio website using HTML, CSS, and Bootstrap.</p>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="row">
+        <div class="col-md-6 resume-section">
+            <h4 class="section-title">Skills</h4>
+            <p>Problem-solving, Team management, Negotiator, C++, HTML, CSS, JavaScript, Git, Visual Studio Code, Cisco Packet Tracer</p>
+        </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="row">
+        <div class="col-md-6 resume-section">
+            <h4 class="section-title">Leadership</h4>
+            <p>College Student Council, Junior Councilor AY 2023-2024</p>
+        </div>
+    </div>
+
+    <!-- Training -->
+    <div class="row">
+        <div class="col-md-6 resume-section">
+            <h4 class="section-title">Training</h4>
+            <p>Completed work immersion training at DICT Legazpi</p>
+        </div>
+    </div>
+
+    <!-- Seminars -->
+    <div class="row">
+        <div class="col-md-6 resume-section">
+            <h4 class="section-title">Seminars</h4>
+            <p>Attended seminars on Mental Health Awareness (2022), Sex Education (2023)</p>
+        </div>
+    </div>
+
+    <!-- Achievements & Certifications -->
+    <div class="row">
+        <div class="col-md-6 resume-section">
+            <h4 class="section-title">Achievements & Certifications</h4>
+            <p><strong>Best Junior Councilor Award, 2024</strong></p>
+            <p><strong>Certified in Web Development</strong> (Issued by ABC Organization)</p>
+        </div>
+    </div>
+
+    <!-- Links to Profiles -->
+    <div class="row">
+        <div class="col-md-12 text-center resume-section">
+            <p><a href="https://github.com/jayyzzs" class="btn btn-secondary">GitHub Profile</a></p>
+        </div>
+    </div>
+
+    <!-- Buttons (Portfolio & Email) -->
+    <div class="row button-container text-center">
+        <div class="col-md-12">
+            <button onclick="location.href='https://www.example.com';" class="btn btn-primary">Visit Portfolio</button>
+            <button onclick="location.href='mailto:balaguer.ejcarl.claveron@gmail.com';" class="btn btn-secondary">Email Me</button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
